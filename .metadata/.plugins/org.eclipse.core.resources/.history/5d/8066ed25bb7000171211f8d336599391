@@ -20,39 +20,31 @@ public class CoffeeShopGUI {
 		int pass;
 		boolean valid = false;
 		
-		while(valid == false)
+		pass = Integer.parseInt(JOptionPane.showInputDialog("Enter your 4 Digit Password."));
+		
+		for(int x : passwords)
 		{
 			
-			pass = Integer.parseInt(JOptionPane.showInputDialog("Enter your 4 Digit Password."));
 			
-			for(int x : passwords)
+			if(x == pass)
 			{
 				
+				valid = true; 
 				
-				if(x == pass)
-				{
-					
-					valid = true; 
-					
-				}
-				
-			}
-
-			if(valid == true)
-			{
-				
-				JOptionPane.showMessageDialog(frame, "Press OK to enter." , "Success", JOptionPane.PLAIN_MESSAGE);
-			}
-			else 
-			{
-				
-				JOptionPane.showMessageDialog(frame, "Invalid Password", "Failed", JOptionPane.WARNING_MESSAGE );
 			}
 			
 		}
 		
-		
-		
+		if(valid == true)
+		{
+			
+			JOptionPane.showMessageDialog(frame, "Press OK to enter." , "Success", JOptionPane.PLAIN_MESSAGE);
+		}
+		else 
+		{
+			
+			JOptionPane.showMessageDialog(frame, "Invalid Password", "Failed", JOptionPane.WARNING_MESSAGE );
+		}
 	}
 
 }

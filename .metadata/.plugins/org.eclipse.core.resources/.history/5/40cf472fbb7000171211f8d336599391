@@ -20,7 +20,7 @@ public class CoffeeShopGUI {
 		int pass;
 		boolean valid = false;
 		
-		while(valid == false)
+		while(valid = false)
 		{
 			
 			pass = Integer.parseInt(JOptionPane.showInputDialog("Enter your 4 Digit Password."));
