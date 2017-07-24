@@ -76,14 +76,12 @@ public class CoffeeShopGUI {
 		
 		logOut.addActionListener(new ActionListener(){
 			
-			public void actionPerformed(ActionEvent arg0)
+			public void actionPerformer(ActionEvent arg0)
 			{
 				
 				JOptionPane.showMessageDialog(frame, "Press OK to log out." , "Logging out", JOptionPane.PLAIN_MESSAGE);
 				frame.dispose();
 			}
-
-			
 		});
 		
 	}
